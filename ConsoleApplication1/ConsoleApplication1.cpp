@@ -188,17 +188,17 @@ double trapz_integral_2d_par(
 //---------------------------------------- Тестовые функции -------------------------------------------
 double f(const double& x, const double& y)
 {
-	return exp(8 * x + pow(y, 3));
+	return pow(x, 2) + 2 * pow(y, 2);
 }
 
 double up_y(const double& x)
 {
-	return 1;
+	return 1 + x;
 }
 
 double down_y(const double& x)
 {
-	return -1 + cos(x);
+	return -1;
 }
 
 
